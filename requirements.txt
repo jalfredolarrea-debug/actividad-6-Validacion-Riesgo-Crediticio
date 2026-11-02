@@ -1,0 +1,6 @@
+# Versiones observadas en Colab para las dependencias principales
+pandas==2.2.3
+scikit-learn==1.6.1
+# Paquetes utilizados, sin fijar versiones no verificadas en el entorno ejecutado
+numpy
+matplotlib
