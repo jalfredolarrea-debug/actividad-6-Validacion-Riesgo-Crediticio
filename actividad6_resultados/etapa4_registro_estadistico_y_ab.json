@@ -1,0 +1,46 @@
+{
+  "etapa": 4,
+  "nombre": "Contraste estadístico exploratorio y simulación A/B",
+  "semilla_base": 42,
+  "semilla_ab": 448,
+  "n_desarrollo": 800,
+  "n_test_reservado_sin_evaluar": 200,
+  "n_bootstrap": 2000,
+  "n_permutaciones_ab": 5000,
+  "umbral_candidato_A": 0.21,
+  "umbral_candidato_B": 0.28,
+  "modelo_provisional_para_test": "Random Forest",
+  "umbral_provisional_para_test": 0.28,
+  "costo_fn": 5,
+  "costo_fp": 1,
+  "auc_b_menos_a": 0.012864583333333401,
+  "ic95_auc": [
+    -0.007403831845238162,
+    0.03195591517857141
+  ],
+  "costo_pareado_b_menos_a": -0.045,
+  "ic95_costo_pareado": [
+    -0.115,
+    0.02503124999999983
+  ],
+  "ab_simulado": {
+    "grupo_A": 400,
+    "grupo_B": 400,
+    "costo_medio_A": 0.5675,
+    "costo_medio_B": 0.525,
+    "diferencia_B_menos_A": -0.04249999999999998,
+    "ic95_bootstrap": [
+      -0.19999999999999996,
+      0.12506249999999972
+    ],
+    "p_permutaciones_bilateral": 0.6394721055788842,
+    "alpha_exploratorio": 0.05
+  },
+  "limitaciones": [
+    "Seleccion de modelos y umbrales sobre los mismos OOF: inferencia exploratoria y optimismo posible.",
+    "Bootstrap OOF no captura el reentrenamiento ni valida generalizacion externa.",
+    "A/B simulado sobre datos historicos: no existe tratamiento real ni efecto causal observado.",
+    "Costos 5:1 hipoteticos: no son perdidas monetarias ni tasas representativas de cartera.",
+    "Test independiente reservado para etapa posterior."
+  ]
+}

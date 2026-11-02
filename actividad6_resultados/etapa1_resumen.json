@@ -1,0 +1,17 @@
+{
+  "fuente_oficial": "UCI South German Credit (dataset 573)",
+  "ruta_de_obtencion": "https://archive.ics.uci.edu/static/public/573/south+german+credit+update.zip",
+  "sha256_zip": "0b40d40eb7321693d559e247a556f88a6cc8df8489c3cb2ae084db7592584551",
+  "referencia_etiquetas": "Grömping (2019), apéndice B: ASC 0=malo, 1=bueno; variable modelada invertida",
+  "observaciones": 1000,
+  "variables_predictoras": 20,
+  "clase_positiva": "1 = crédito malo/riesgo alto",
+  "clase_negativa": "0 = crédito bueno/riesgo bajo",
+  "frecuencia_positiva": 300,
+  "frecuencia_negativa": 700,
+  "nulos_totales": 0,
+  "duplicados_filas_completas": 0,
+  "duplicados_solo_predictoras": 0,
+  "columnas_constantes": [],
+  "semilla": 42
+}

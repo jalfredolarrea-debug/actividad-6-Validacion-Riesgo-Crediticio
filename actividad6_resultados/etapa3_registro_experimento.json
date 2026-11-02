@@ -1,0 +1,36 @@
+{
+  "generado_utc": "2026-11-02T00:29:36.630742+00:00",
+  "fuente": "South German Credit, UCI (dataset 573)",
+  "etapa": "3 - ajuste de umbral",
+  "semilla": 42,
+  "n_desarrollo": 800,
+  "folds": 5,
+  "evento_positivo": "riesgo_alto=1, crédito malo",
+  "metas": {
+    "recall": 0.75,
+    "especificidad": 0.6,
+    "roc_auc": 0.7
+  },
+  "costo_FN_FP_ilustrativo": [
+    5,
+    1
+  ],
+  "barrido_umbrales": {
+    "inicio": 0.01,
+    "fin": 0.99,
+    "paso": 0.01
+  },
+  "modelos_comparados": [
+    "Regresión logística",
+    "Random Forest"
+  ],
+  "modelo_provisional": "Random Forest",
+  "umbral_provisional": 0.28,
+  "estado": "Candidato que cumple metas OOF; requiere evaluación independiente",
+  "advertencias": [
+    "Métricas de selección del umbral estimadas sobre desarrollo OOF: pueden ser optimistas.",
+    "No se han utilizado ni evaluado los 200 registros de prueba.",
+    "Costos relativos 5 a 1 ilustrativos, sin validación económica en cartera real.",
+    "No es una recomendación de despliegue ni de decisiones crediticias automatizadas."
+  ]
+}

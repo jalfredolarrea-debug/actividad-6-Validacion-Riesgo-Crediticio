@@ -1,0 +1,34 @@
+{
+  "modelo": "Random Forest",
+  "umbral": 0.28,
+  "n_test": 200,
+  "metricas": {
+    "exactitud": 0.63,
+    "recall": 0.7833333333333333,
+    "especificidad": 0.5642857142857143,
+    "precision": 0.4351851851851852,
+    "f1": 0.5595238095238095,
+    "roc_auc": 0.7588095238095237,
+    "costo_ponderado": 126.0
+  },
+  "metas": {
+    "recall": 0.75,
+    "especificidad": 0.6,
+    "roc_auc": 0.7
+  },
+  "cumplimiento_smart_puntual": false,
+  "despliegue_autorizado": false,
+  "ab_simulado_p": 0.6394721055788842,
+  "ab_simulado_significativo_alpha_005": false,
+  "costo_fn_fp": "5 a 1: exclusivamente ilustrativo",
+  "recomendacion": "No-go. No reoptimizar con el test; cualquier nueva versión requiere diseño prospectivo y nueva muestra independiente.",
+  "limitaciones": [
+    "Datos historicos: no representan necesariamente la poblacion o cartera actual.",
+    "Validacion interna retenida, no externa ni temporal.",
+    "Los resultados de seleccion OOF pueden estar afectados por optimismo.",
+    "Prueba unica de 200 registros con incertidumbre muestral importante.",
+    "No se ha demostrado equidad, estabilidad, calibracion ni utilidad financiera real.",
+    "A/B de etapa 4 es una simulacion retrospectiva, no evidencia causal.",
+    "El supuesto de costo 5:1 no es una estimacion financiera real."
+  ]
+}

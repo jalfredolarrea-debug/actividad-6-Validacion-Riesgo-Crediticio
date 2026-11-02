@@ -1,0 +1,69 @@
+{
+  "etapa": 5,
+  "descripcion": "Evaluacion interna final sobre test reservado (una sola consulta)",
+  "dataset": "South German Credit, UCI 573",
+  "semilla": 42,
+  "entrenamiento_n": 800,
+  "prueba_n": 200,
+  "positivos_test": 60,
+  "clase_positiva": "credito malo; riesgo_alto=1",
+  "modelo_candidato_fijo": "Random Forest",
+  "umbral_fijo": 0.28,
+  "metas_ex_ante": {
+    "recall": 0.75,
+    "especificidad": 0.6,
+    "roc_auc": 0.7
+  },
+  "metricas_test_candidato": {
+    "TN": 79.0,
+    "FP": 61.0,
+    "FN": 13.0,
+    "TP": 47.0,
+    "exactitud": 0.63,
+    "recall": 0.7833333333333333,
+    "especificidad": 0.5642857142857143,
+    "precision": 0.4351851851851852,
+    "f1": 0.5595238095238095,
+    "roc_auc": 0.7588095238095237,
+    "tasa_alertas": 0.54,
+    "costo_ponderado": 126.0
+  },
+  "ic95": {
+    "recall": [
+      0.6637997242680521,
+      0.868769559518097
+    ],
+    "especificidad": [
+      0.4815187166864511,
+      0.6436190575517672
+    ],
+    "roc_auc": [
+      0.6865476190476191,
+      0.8267857142857142
+    ]
+  },
+  "cumplimiento_estimaciones_puntuales": {
+    "recall": true,
+    "especificidad": false,
+    "roc_auc": true
+  },
+  "cumplimiento_limite_inferior_95": {
+    "recall": false,
+    "especificidad": false,
+    "roc_auc": false
+  },
+  "costos_ilustrativos": {
+    "falso_negativo": 5,
+    "falso_positivo": 1
+  },
+  "despliegue_autorizado": false,
+  "limitaciones": [
+    "Datos historicos: no representan necesariamente la poblacion o cartera actual.",
+    "Validacion interna retenida, no externa ni temporal.",
+    "Los resultados de seleccion OOF pueden estar afectados por optimismo.",
+    "Prueba unica de 200 registros con incertidumbre muestral importante.",
+    "No se ha demostrado equidad, estabilidad, calibracion ni utilidad financiera real.",
+    "A/B de etapa 4 es una simulacion retrospectiva, no evidencia causal.",
+    "El supuesto de costo 5:1 no es una estimacion financiera real."
+  ]
+}

@@ -1,0 +1,4 @@
+analisis,efecto_B_menos_A,IC95_inferior,IC95_superior,valor_p,escala
+ROC-AUC pareado (OOF),0.012864583333333401,-0.007403831845238162,0.03195591517857141,,puntos AUC
+Costo medio pareado (OOF),-0.045,-0.115,0.02503124999999983,,unidades ilustrativas/caso
+A/B simulado (aleatorizado 1:1),-0.04249999999999998,-0.19999999999999996,0.12506249999999972,0.6394721055788842,unidades ilustrativas/caso

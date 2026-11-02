@@ -1,0 +1,3 @@
+umbral,TN,FP,FN,TP,recall,especificidad,precision,f1,exactitud,costo_ponderado,tasa_alertas,modelo,roc_auc_oof,cumple_recall,cumple_especificidad,cumple_objetivos,brecha_recall,brecha_especificidad,brecha_total,criterio,brecha_roc_auc,brecha_total_modelo
+0.21,340,220,50,190,0.7916666666666666,0.6071428571428571,0.4634146341463415,0.5846153846153846,0.6625,470,0.5125,Regresión logística,0.7786904761904762,True,True,True,0.0,0.0,0.0,Mínimo costo entre umbrales factibles,0.0,0.0
+0.28,346,214,44,196,0.8166666666666667,0.6178571428571429,0.47804878048780486,0.6030769230769231,0.6775,434,0.5125,Random Forest,0.7915550595238096,True,True,True,0.0,0.0,0.0,Mínimo costo entre umbrales factibles,0.0,0.0
